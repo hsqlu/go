@@ -2,7 +2,9 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"learning/example"
+	"runtime"
 )
 
 func hello(val string) string { return "hello " + val }
@@ -23,5 +25,8 @@ func main() {
 	// 	flag.PrintDefaults()
 	// }
 	// fmt.Println(os.Args)
-	example.Example03()
+	example.Example_Defer()
+
+	// fmt.Println(rand.Intn(10))
+	fmt.Println(runtime.GOOS)
 }

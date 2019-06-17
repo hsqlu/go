@@ -1,6 +1,8 @@
 package example
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func Example03() {
 	var a = "initial"
@@ -17,4 +19,5 @@ func Example03() {
 
 	f := "apple"
 	fmt.Println(f)
+
 }
